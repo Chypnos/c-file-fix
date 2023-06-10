@@ -32,10 +32,10 @@ int main(void)
             do save here
         */
         fix_file(INPUT_FILE, "r", buffer);
-        printf("===========\n%s", buffer);
+        printf("===========\n%s\n", buffer);
         wptr = fopen(OUT_FILE, "a");
         if(wptr) {
-            fprintf(wptr, buffer);
+            fprintf(wptr, "%s", buffer);
             fclose(wptr);
         } else {
             printf("File error!\n");

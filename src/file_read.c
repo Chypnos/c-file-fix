@@ -18,7 +18,7 @@ void fix_file(char file[], char mode[], char * data) {
     char fixed_str[STR_SIZE];
     FILE *fptr = NULL;
     char c;
-    char separator = '|';
+    char separator = ',';
     int count = 0;
     memset(fixed_str, '\0', STR_SIZE);
 

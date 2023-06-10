@@ -7,7 +7,7 @@
 
 #define INPUT_FILE  "./data/patients.dat"
 #define OUT_FILE  "./data/patients.csv"
-#define HEADER_CSV "First name|Last name|Age\n"
+#define HEADER_CSV "First name,Last name,Age\n"
 #define MAX_SIZE_BUFFER 260
 
 char* buffer = NULL;
@@ -42,7 +42,7 @@ int main(void)
         };
         free(buffer);
         buffer = NULL;
-        
+
     } else {
         printf("Not enough memory\n");
     };
